@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./VANNA_logo2.png" width="150" title="logo Vanna">
+        <h1>Product Control</h1>
+    </header>
+
+    <main>
+        <h2>Products</h2>
+        <span>Product list</span>
+        <div class="card">
+            <div class="inputProduct">
+                <label>Product's Name</label>
+                <input type="text" id="productName" placeholder="Iphone">
+            </div>
+            <div class="inputProduct">
+                <label>Price $</label>
+                <input type="text" id="productPrice" placeholder="US$ 0.00">
+            </div>
+            <button onclick="product.Add()" title="test"> Add </button>
+            <button onclick="product.Cancel()" title="test"> Cancel </button>
+        </div>
+
+        <div class="contents">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
